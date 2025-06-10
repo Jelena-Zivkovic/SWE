@@ -13,12 +13,9 @@ export class Tab1Page implements OnInit {
   constructor(public photoService: PhotoService, private actionSheetController: ActionSheetController) {
   }
 
-
-
   async ngOnInit() {
     await this.photoService.loadSaved();
   }
-
 
   addPhotoToGallery() {
     this.photoService.addNewToGallery();

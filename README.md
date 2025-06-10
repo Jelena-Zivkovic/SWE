@@ -1,4 +1,4 @@
-# Ionic Framework
+# Kreiranje mobilne aplikacije uz pomoć Ionic Framework-a
 
 ## Što je Ionic? Temeljni principi i arhitektura
 
@@ -44,7 +44,7 @@ Na kraju, **jednostavnost održavanja** proizlazi iz pristupa jedinstvene baze k
 
 Uprkos brojnim prednostima, Ionic Framework ima određena ograničenja koja treba uzeti u obzir. Jedan od glavnih izazova su ograničenja performansi. Iako je Ionic optimizovan za web performanse i teži nativnom osećaju, njegove aplikacije, budući da se izvršavaju unutar WebView okruženja, možda neće postići istu brzinu i odzivnost kao potpuno nativne aplikacije. Ovo je posebno primetno kod složenih aplikacija, onih sa intenzivnom grafikom ili zahtevnim animacijama, gde se može primetiti pad performansi od 10-15% u poređenju sa nativnim rešenjima. To znači da projekti koji zahtevaju vrhunske performanse, tešku grafiku ili složenu obradu podataka u realnom vremenu mogu naići na uska grla u performansama Ionica, što zahteva pažljivu optimizaciju ili razmatranje alternativnih okvira.
 
-Izazovi u otklanjanju grešaka (debugging) takođe su prisutni. Apstrakcioni sloj koji uvodi okvir može ponekad otežati otklanjanje grešaka, posebno kada se problemi tiču interakcija između web koda i osnovne nativne platforme. Alati za otklanjanje grešaka možda ne pružaju detaljne uvide dostupne za nativni razvoj. Postoji i određena razlika u dokumentaciji. Dok neki izvori navode "izazove sa hot reloadingom" ili čak da "Ionic ne podržava hot reloading", zvanična dokumentacija jasno navodi da "Ionic CLI ima funkciju Live Reload, tako da se promene odmah ažuriraju!". Ova razlika verovatno proizlazi iz nijansiranog razumevanja pojmova "hot reloading" (koji pokušava da injektuje promene bez gubitka stanja aplikacije) i "Live Reload" (koji automatski osvežava celu aplikaciju pri promenama koda). Za programere to znači da je razvoj u pregledaču sa Ionicom veoma brz, ali otklanjanje grešaka koje uključuju nativne interakcije ili složeno upravljanje stanjem može i dalje zahtevati tradicionalnije ponovne izgradnje ili ponovno pokretanje na stvarnim uređajima.
+Izazovi u otklanjanju grešaka (debugging) takođe su prisutni. Apstrakcioni sloj koji uvodi okvir može ponekad otežati otklanjanje grešaka, posebno kada se problemi tiču interakcija između web koda i osnovne nativne platforme. Alati za otklanjanje grešaka možda ne pružaju detaljne uvide dostupne za nativni razvoj. Postoji i određena razlika u dokumentaciji.
 
 Iako Ionic pruža pristup nativnim funkcionalnostima putem dodataka, istorijski gledano, postojala su ograničenja u direktnom pristupu određenim nativnim API-jima. Ovo je moglo ograničiti funkcionalnost za funkcije koje su u velikoj meri zavisne od specifičnog hardvera uređaja ili mogućnosti operativnog sistema. Međutim, sa razvojem Capacitatora, ovaj problem je značajno ublažen.
 
