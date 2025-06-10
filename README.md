@@ -159,30 +159,30 @@ Capacitor koristi dodatke za apstrahovanje složenih nativnih funkcionalnosti u 
 
 ### Pokretanje i testiranje aplikacije
 
-- **Pokretanje u pregledniku**: Primarno razvojno okruženje za Ionic je web browser. Pokrenite aplikaciju koristeći:  
+- **Pokretanje u browser-u**: Primarno razvojno okruženje za Ionic je web browser. Pokrenite aplikaciju koristeći:  
   `ionic serve`  
-  Ova naredba pokreće aplikaciju u vašem web pregledniku, omogućavajući brz razvoj i testiranje. Ionic CLI ima funkciju Live Reload, što znači da se sve promene odmah odražavaju u pregledniku. Takođe možete koristiti `ionic serve -l` za pregled aplikacije u Ionic Labu, koji pruža usporedni prikaz iOS i Android prikaza.
+  Ova naredba pokreće aplikaciju u vašem web browser-u, omogućavajući brz razvoj i testiranje. Ionic CLI ima funkciju Live Reload, što znači da se sve promene odmah odražavaju u browser-u. Takođe možete koristiti `ionic serve -l` za pregled aplikacije u Ionic Labu, koji pruža usporedni prikaz iOS i Android prikaza.
 
-- **Izgradnja za nativne platforme**:
+- **Kreiranje za nativne platforme**:
 
   - Dodavanje projekata nativnih platformi:  
      `ionic capacitor add android` ili `ionic capacitor add ios`
   - Sinhronizacija web resursa sa nativnim projektima:  
      `ionic capacitor sync`
-  - Izgradnja nativne aplikacije:  
+  - Kreirenje nativne aplikacije:  
      `ionic capacitor build android` ili `ionic capacitor build ios`
   - Pokretanje na uređaju ili emulatoru:  
      `ionic capacitor run android` ili `ionic capacitor run ios`
   - Otvaranje nativnog projekta u njegovom IDE-u:  
      `ionic capacitor open android` ili `ionic capacitor open ios`
 
-- **Stvaranje produkcijske verzije**:  
-  Za implementaciju, stvorite optimizovanu produkcijsku verziju vaših web resursa:  
+- **Kreiranje produkcijske verzije**:  
+  Za implementaciju, kreiranje optimizovanu produkcijsku verziju vaših web resursa:  
   `ionic build --prod`  
   Ova naredba kompilira vaš web kod u folder `www`, koji Capacitor zatim kopira u nativne projekte.
 
 ### Osnovna struktura aplikacije i korišćenje komponenti
 
-Ionic projekti obično prate standardnu strukturu web aplikacije, često nalikujući Angular, React ili Vue projektima, u zavisnosti od odabranog okvira. Ključne datoteke uključuju `src/index.html` (glavna ulazna tačka), `src/main.ts/tsx` (inicijalizacija aplikacije) i datoteke komponenti unutar `src/app/` ili `src/pages/`.
+Ionic projekti obično prate standardnu strukturu web aplikacije, dosta liči na Angular, React ili Vue projekte, u zavisnosti od odabranog okvira. Ključne datoteke uključuju `src/index.html` (glavna ulazna tačka), `src/main.ts/tsx` (inicijalizacija aplikacije) i datoteke komponenti unutar `src/app/` ili `src/pages/`.
 
 Ionic pruža bogat skup UI komponenti (npr. `<ion-header>`, `<ion-toolbar>`, `<ion-title>`, `<ion-content>`, `<ion-fab>`, `<ion-icon>`) koje pojednostavljuju razvoj korisničkog interfejsa i automatski se prilagođavaju stilovima platforme. Programeri primarno rade unutar HTML, CSS i TypeScript/JavaScript datoteka ovih komponenti, koristeći Ionicovu biblioteku komponenti za izgradnju korisničkog interfejsa i logike aplikacije.
